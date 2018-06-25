@@ -21,7 +21,7 @@ import LinkPlugin from '@ckeditor/ckeditor5-link/src/link';
 import ListPlugin from '@ckeditor/ckeditor5-list/src/list';
 import ParagraphPlugin from '@ckeditor/ckeditor5-paragraph/src/paragraph';
 import FileRepos from '@ckeditor/ckeditor5-upload/src/filerepository';
-import FooPlugin from './Plugins/FooPlugin';
+import SharePointUploaderPlugin from './Plugins/SharePointUploaderPlugin';
 export default class ClassicEditor extends ClassicEditorBase {}
 
 ClassicEditor.build = {
@@ -43,7 +43,7 @@ ClassicEditor.build = {
 		ListPlugin,
 		ParagraphPlugin,
 		FileRepos,
-		FooPlugin
+		SharePointUploaderPlugin
 	],
 	config: {
 		toolbar: {
