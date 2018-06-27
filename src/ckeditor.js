@@ -21,7 +21,8 @@ import LinkPlugin from '@ckeditor/ckeditor5-link/src/link';
 import ListPlugin from '@ckeditor/ckeditor5-list/src/list';
 import ParagraphPlugin from '@ckeditor/ckeditor5-paragraph/src/paragraph';
 import FileRepos from '@ckeditor/ckeditor5-upload/src/filerepository';
-import SharePointUploaderPlugin from './Plugins/SharePointUploaderPlugin';
+import SharePointUploaderPlugin from './Plugins/SharePointUploader';
+
 export default class ClassicEditor extends ClassicEditorBase {}
 
 ClassicEditor.build = {
