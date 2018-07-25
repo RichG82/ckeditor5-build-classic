@@ -12,7 +12,6 @@ export default class SharePointUploadAdapter {
 	}
 
 	upload() {
-
 		pnp.setup({
 			sp: {
 				baseUrl: this.spSiteUrl

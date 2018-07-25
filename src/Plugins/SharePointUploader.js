@@ -22,6 +22,8 @@ export default class SharePointUploader extends Plugin {
 		}
 
 		// Register CKFinderAdapter
-		this.editor.plugins.get( FileRepository ).createUploadAdapter = loader => new SharePointUploadAdapter( loader, spSiteUrl, spLibrary );
+		this.editor.plugins.get( FileRepository ).createUploadAdapter = (loader) => {
+			return new SharePointUploadAdapter( loader, spSiteUrl, spLibrary )
+		}
 	}
 }
