@@ -52,12 +52,7 @@ ClassicEditor.build = {
 	],
 	config: {
 		toolbar: {
-			plugins: [Table, TableToolbar],
-			table: {
-				toolbar: ['tableColumn', 'tableRow', 'mergeTableCells']
-			},
 			items: [
-				'insertTable',
 				'heading',
 				'|',
 				'bold',

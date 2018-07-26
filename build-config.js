@@ -38,12 +38,7 @@ module.exports = {
 	// Editor config.
 	config: {
 		toolbar: {
-			toolbar: ['insertTable'],
-			table: {
-				toolbar: ['tableColumn', 'tableRow', 'mergeTableCells']
-			},
 			items: [
-				'insertTable',
 				'heading',
 				'|',
 				'bold',
