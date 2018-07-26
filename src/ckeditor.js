@@ -22,6 +22,8 @@ import ListPlugin from '@ckeditor/ckeditor5-list/src/list';
 import ParagraphPlugin from '@ckeditor/ckeditor5-paragraph/src/paragraph';
 import FileRepos from '@ckeditor/ckeditor5-upload/src/filerepository';
 import SharePointUploaderPlugin from './Plugins/SharePointUploader';
+import Table from '@ckeditor/ckeditor5-table/src/table';
+import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 
 export default class ClassicEditor extends ClassicEditorBase {}
 
@@ -44,11 +46,18 @@ ClassicEditor.build = {
 		ListPlugin,
 		ParagraphPlugin,
 		FileRepos,
-		SharePointUploaderPlugin
+		SharePointUploaderPlugin,
+		Table,
+		TableToolbar
 	],
 	config: {
 		toolbar: {
+			plugins: [Table, TableToolbar],
+			table: {
+				toolbar: ['tableColumn', 'tableRow', 'mergeTableCells']
+			},
 			items: [
+				'insertTable',
 				'heading',
 				'|',
 				'bold',

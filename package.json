@@ -71,6 +71,7 @@
     "preversion": "npm run build; if [ -n \"$(git status src/ckeditor.js build/ --porcelain)\" ]; then git add -u src/ckeditor.js build/ && git commit -m 'Internal: Build.'; fi"
   },
   "dependencies": {
+    "@ckeditor/ckeditor5-table": "^10.1.0",
     "@pnp/common": "^1.1.1",
     "@pnp/logging": "^1.1.1",
     "@pnp/pnpjs": "^1.1.1",
